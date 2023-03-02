@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
+  
+  font-family: "Poppins";
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul, li {
+  padding: 0;
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+h2, h3 {
+  font-style: normal;
+}
+
+.content {
+  margin-top: 2em;
+}
+h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #1E1E1E;
+}
+
+h3 {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+
+  /* identical to box height */
+
+  color: #1E1E1E;
+}
+
+.shopping_container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.row_2 > ul li{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  /*grid-auto-rows: minmax(100px, auto);*/
+  /*display: flex;*/
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  padding: 1em;
+  margin: 1em;
+}
+
+input {
+  background: #EBEFF2;
+  border-radius: 5px;
+  padding: 10px 98px 10px 0px;
+}
+
+button {
+  background: #4DE1C1;
+  border-radius: 12px;
+  padding: 1em;
+}
+
+.row_2 > ul li > *{
+  margin-right: 2em;
+}
+
+.item_img {
+  width: 80px;
+  height: 82.29px;  
+}
+
+.trashcan_img {
+  width: 25px;
+  height: 25px;
+}
+
+select {
+  height: 16px;
+}
+
+
+.addItem_form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-content: end;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.card_container {
+  background: #565ABB;
+border-radius: 20px;
+width: 80%;
+padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_container div {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
+
+.card_types {
+  display: flex;
+  justify-content: space-between;
+}
+
+
